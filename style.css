@@ -1,0 +1,78 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+.pop-up{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(113, 128, 212);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+canvas {
+    background-color: white;
+}
+
+.herramientas {
+    display: flex;
+    justify-items: center;
+    grid-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profiles{
+    display: contents;
+
+}
+.perfil{
+    width: 5em;
+    height: 5vh;
+    background-color: rgba(255, 1, 1, 0.813);
+    border-radius: 1.3vw;
+    margin-top: 2px;
+    cursor: alias;
+    transition: all 1s ease-out;
+}
+
+code {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.perfil > img{
+    height: 4vh;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+}
+
+
+.grosor{
+    margin-right: 0.5em;
+    background-color: rgb(0, 0, 0);
+    min-width: 0.15em;
+    height: 2.3em;
+    border-radius: 0.8em;
+}
+
+.clicked {
+    background-color: rgba(56, 54, 54, 0.578);
+}
+
+input[type=tel]{
+    width: 2em;
+    margin-right: 10px;
+    overflow: hidden;
+}

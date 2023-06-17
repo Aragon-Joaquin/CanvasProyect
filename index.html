@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas proyect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="herramientas">
+            <button id="saveSettings">Guardar pincel</button>
+            <div id="profiles">
+                <code value="" class="perfil" style="display: none;"><img src="trash_png.png"><div class="grosor"></div></code>
+                <code value="" class="perfil" style="display: none;"><img src="trash_png.png"><div class="grosor"></div></code>
+                <code value="" class="perfil" style="display: none;"><img src="trash_png.png"><div class="grosor"></div></code>
+                <code value="" class="perfil" style="display: none;"><img src="trash_png.png"><div class="grosor"></div></code>
+                <code value="" class="perfil" style="display: none;"><img src="trash_png.png"><div class="grosor"></div></code>
+            </div>
+
+            <div class="section1">
+                <button id="borrador">borrador</button>
+                <input type="range" min="20" max="100" value="50" step="any" class="borrador_slider">
+                <input type="tel" maxlength="3" value="50" class="borrador_number">
+            </div>
+
+            <div class="section2">
+                <button id="lapiz" class="clicked">lapiz</button>
+                <input type="color" class="color_selector" value="#000000">
+                <input type="range" min="1" max="120" value="50" step="any" class="lapiz_slider">
+                <input type="tel" maxlength="3" value="50" class="lapiz_number">
+            </div>
+
+            <div class="section3">
+                <button id="undo">undo (0)</button>
+                <button id="redo">redo (0)</button>
+            </div>
+            <button id="clear">clear</button>
+
+            <button class="downloadCanvas">Download Canvas .png</button>
+        </div>
+
+        <canvas id="main-canvas" width="900px" height="900px"></canvas>
+    </main>
+
+    
+    
+    
+    
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="pop-up.js"></script>
+
+    <script src="js.js" type="module"></script>
+</body>
+</html>
